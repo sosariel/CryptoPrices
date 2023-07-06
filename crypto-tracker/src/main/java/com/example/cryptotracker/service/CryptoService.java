@@ -22,6 +22,7 @@ public class CryptoService {
                         .queryParam("ids", cryptoName)
                         .build())
                 .retrieve()
-                .bodyToMono(CryptoResponse.class);
+                .bodyToFlux(CryptoResponse.class)
+                .next();
     }
 }
