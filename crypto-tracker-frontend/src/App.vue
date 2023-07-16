@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <CryptoData />
+    <CryptoSearch />
   </div>
 </template>
 
 <script>
-import CryptoData from './components/CryptoData.vue'
+import CryptoSearch from './components/CryptoSearch.vue'
 
 export default {
   name: 'App',
   components: {
-    CryptoData
+    CryptoSearch
   }
 }
 </script>
